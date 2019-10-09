@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,600,400,700,900&display=swap')
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+body
+  font-family: 'Roboto', sans-serif
+  color: #000
+a
+  text-decoration: none
+  color: #000
+ul
+  list-style: none
+section .container > h2,
+section .container-fluid > h2,
+.container h2
+  font-size: 28px
+  font-weight: 800
+  text-align: center
+header
+  padding-top: 30px
+  .container-fluid
+    padding: 0 50px
+    .col
+      align-items: center
+      display: flex
+    b
+      font-size: 20px
+      font-weight: bold
+.second_section
+  margin-top: 30px
+  background: url("../img/bgImage.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position-y: center
+  height: 80vh
+  display: flex
+  align-items: center
+  position: relative
+  #arrow_down
+    position: absolute
+    bottom: 30px
+    left: 50%
+    transform: translateX(-50%)
+    animation: moveDown 2s ease-in-out infinite
+  .head_title
+    button
+      display: inline-block
+      height: 60px
+      padding: 0 60px
+      font-size: 16px
+      &:nth-child(2)
+        background-color: #f5e503
+        border: none
+        font-weight: 700
+        margin-right: 10px
+      &:last-child
+        background: none
+        border: 2px solid #fff
+        color: #fff
+        font-weight: 700 
+    h1
+      color: #fff
+      font-size: 42px
+      font-weight: bold
+      margin-bottom: 100px
+@keyframes moveDown
+  from
+    margin-bottom: 0
+  to
+    margin-bottom: -20px
+.thried_section
+  padding-top: 100px
+  .container > h2
+    margin-bottom: 50px
+  ul.about_list
+    img
+      width: 65px
+      margin-right: 30px
+    li
+      display: flex
+      align-items: flex-start
+      div
+        p
+          font-weight: 100
+          font-size: 18px
+          margin-top: 10px
+          font-family: 'Roboto',Arial,sans-serif
+          font-weight: 300
+          color: #000
+        b
+          font-size: 20px
+          font-weight: 600
+.fourth_section
+  background-color: #efefef
+  padding: 130px 0
+  p
+    line-height: 31px
+    font-size: 20px
+    text-align: center
+.fifth_section
+  .container > h2
+    margin: 120px 0
+  .one_day
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: right
+    li
+      width: 40%
+      margin-right: 444px
+      border-right: 2px solid #e0e0e0
+      padding: 0 20px 30px 0
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        display: block
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        background-color: #000
+        right: -11px
+      b
+        font-size: 22px
+      p
+        font-size: 20px
+      &:nth-child(2n)
+        border-left: 2px solid #e0e0e0
+        padding: 0 0 30px 20px
+        border-right: none
+        display: inline-block
+        text-align: left
+        margin-right: 0
+        margin-left: 440px
+        &:before
+          content: ''
+          position: absolute
+          display: block
+          width: 20px
+          height: 20px
+          border-radius: 50%
+          background-color: #000
+          left: -11px
+      &:last-child
+        border: none
+        &:before
+          right: -10px
+.sixth_section
+  background-color: #efefef
+  padding-bottom: 150px
+  .container
+    > h2
+      padding: 100px 0
+    .row
+      .col
+        &:last-child
+          background: url(../img/teacher-full.jpg)
+          background-repeat: no-repeat
+          background-size: cover
+          background-position: center center 
+          // border: 1px solid
+          height: 560px
+        span.line
+          display: block
+          width: 70px
+          background-color: #666
+          height: 3px
+          margin-bottom: 30px
+        b
+          font-size: 24px
+          font-weight: 600
+        h4
+          color: #666666
+          font-size: 20px
+          font-weight: 100
+          margin: 5px 0 20px 0
+        p
+          font-size: 20px
+          font-weight: 300
+.seven_section
+  .container-fluid
+    >h2
+      margin: 50px 0
+    .gallary
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(330px, 356px))
+      justify-content: center
+      grid-gap: 20px
+      a
+        height: 267px
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        &:first-child
+          background-image: url(../img/desk-glr-1.jpg)
+        &:nth-child(2)
+          background-image: url(../img/desk-glr-2.jpg)
+        &:nth-child(3)
+          background-image: url(../img/desk-glr-3.jpg)
+        &:nth-child(4)
+          background-image: url(../img/desk-glr-4.jpg)
+        &:nth-child(5)
+          background-image: url(../img/desk-glr-5.jpg)
+        &:nth-child(6)
+          background-image: url(../img/desk-glr-6.jpg)
+        &:nth-child(7)
+          background-image: url(../img/desk-glr-7.jpg)
+        &:nth-child(8)
+          background-image: url(../img/desk-glr-8.jpg)
+.eighth_section
+  .container
+    >h2
+      margin: 150px 0 100px 0
+    .row
+      .counter
+        text-align: center
+        span
+          font-size: 52px
+          font-weight: 600
+          border-bottom: 1px solid #aaa
+          display: block
+          margin-bottom: 20px
+        p
+          font-size: 20px
+          font-weight: 300
+.ninth_section
+  margin-top: 200px
+  .container
+    >h2
+    .row
+      margin-top: 70px
+      .col
+        p
+          font-size: 20px
+          font-weight: 300
+          margin-top: 15px
+.tenth_section
+  margin-top: 100px
+  .container
+    ul
+      display: flex
+      margin-top: 100px
+      li
+        padding-right: 40px
+        padding-top: 30px
+        border-top: 2 solid #efefef
+        position: relative
+        width: 30%
+        &:before
+          content: '1'
+          font-weight: 800
+          color: #fff
+          display: flex
+          justify-content: center
+          align-items: center
+          position: absolute
+          left: 0
+          top: -17px
+          width: 33px
+          height: 33px
+          border-radius: 50%
+          background-color: #222
+        &:nth-child(2)
+          &:before
+            content: '2'
+        &:nth-child(3)
+          &:before
+            content: '3'
+        &:last-child
+          &:before
+            content: '4'
+          border-top: none
+        b
+          font-size: 22px
+          font-weight: 600
+        p
+          font-size: 20px
+          margin-top: 10px
+          font-weight: 100
+.eleven_section
+  margin-top: 130px 
+  .container
+    text-align: center
+    span.line
+      display: block
+      width: 150px
+      height: 1px
+      margin: auto
+      background-color: #000
+      opacity: 0.2
+    button
+      background-color: #fff
+      border: 2px solid
+      font-size: 16px
+      font-weight: 700
+      padding: 20px 60px
+      margin: 130px 0
+    >h2
+      margin-bottom: 70px
+    .col
+      text-align: left
+      h2
+        font-size: 24px
+        padding: 20px 80px 20px 30px 
+        font-weight: 600
+        color: #fff
+        margin-bottom: 0
+        background-color: rgb(19, 161, 209)
+      p
+        background-color: #efefef
+        margin: 0
+        padding: 0 30px
+        padding-bottom: 20px
+        font-size: 20px
+        font-weight: 300
+        b
+          display: block
+          margin: 0
+          padding-top: 30px
+          font-size: 22px
+          font-weight: 600
+          &:nth-child(2)
+            padding-bottom: 20px
+.twelve_section
+  background-color: #eeeeee
+  padding-top: 80px
+  padding-bottom: 100px
+  .container
+    .questions
+      background-color: #fff
+      .question
+        .rotate
+          transform: rotate(-45deg)
+        img
+          transition: .2s ease-in-out
+          border-radius: 50%
+          padding: 5px
+        p
+          padding: 15px 20px 10px 20px
+          display: none
+          font-size: 20px
+          font-weight: 300
+        .question_title
+          cursor: pointer
+          padding: 20px
+          border-bottom: 1px solid #eeeeee
+          display: flex
+          justify-content: space-between
+          b
+            font-size: 24px
+            font-weight: 600
+          &:hover
+            img
+              background-color: #eeeeee
+.map_section
+  .container-fluid
+    padding: 0
+    .row
+      height: 100vh
+      .col
+        margin: 0
+        padding: 0
+        &:last-child
+          background-color: #292929
+          display: flex
+          align-items: center
+          color: #fff
+          .map_title
+            padding: 0 100px
+          b
+            font-size: 28px
+            font-weight: 600
+          p
+            font-size: 20px
+            padding-top: 40px
+            font-weight: 300
+footer
+  text-align: center
+  p
+    font-size: 14px
+    font-weight: 100
+  img
+    margin: 40px 0
+#toTop
+  position: fixed
+  bottom: 30px
+  right: 30px
+
+
+
+
+
