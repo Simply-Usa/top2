@@ -1,0 +1,115 @@
+@media (max-width: 576px)
+  header
+    .row
+      flex-direction: column
+      align-items: center
+      .col-7
+        min-width: 100%
+        padding: 0
+        // border: 1px solid
+      .col
+        padding: 0
+        min-width: 100%
+        // border: 1px solid
+        text-align: center
+  .second_section
+    height: 80vh
+    .container
+      h1
+        font-size: 40px
+    .head_title.col-8
+      min-width: 100%
+  .fifth_section
+    .one_day
+      li
+        width: 100%
+        margin-right: 0
+        text-align: left
+        padding: 10px 0 30px 20px
+        border-right: none
+        border-left: 2px solid #e0e0e0
+        &:before
+          content: none
+        &:after
+          content: ''
+          position: absolute
+          display: block
+          width: 20px
+          height: 20px
+          border-radius: 50%
+          background-color: #000
+          left: -11px
+          top: 0
+        &:nth-child(2n)
+          display: block
+          margin-left: 0
+          padding: 10px 0 0 20px
+          &:before
+            content: none
+          &:after
+            content: ''
+            position: absolute
+            display: block
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            background-color: #000
+            left: -11px
+  .tenth_section
+    .container
+      ul
+        flex-direction: column
+        li
+          border-top: none
+          border-left: 2 solid #efefef
+          min-width: 100%
+          padding-left: 30px
+          &:before
+            left: -18px
+          &:last-child
+            border: none
+  .eleven_section
+    .container
+      .row
+        flex-direction: column
+        .col
+          margin-top: 20px
+  .map_section
+    .container-fluid
+      .row
+        flex-direction: column
+  .sixth_section
+    .container
+      .row
+        flex-direction: column
+  .seven_section
+    .container-fluid
+      .gallary
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))   
+        grid-gap: 5px
+        a     
+          height: 200px
+  .eighth_section
+    .container
+      .row
+        flex-direction: column
+  .ninth_section
+    .container
+      .row
+        flex-direction: column
+  .modal
+    form
+      width: 100%
+      height: 40%
+      padding: 5px
+      top: -30px
+      h2
+        font-size: 20px
+      input
+        margin-bottom: 10px
+      legend
+        h2
+          font-size: 30px
+        h3
+          font-size: 20px
+          margin: 20px 0

@@ -37,4 +37,23 @@ $(document).ready(function(){
     $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
     return false;
   });
+  $('.open_modal, #close_modal').click(function(){
+    $('.modal').toggleClass('flex_modal');
+  });
+  $("form").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "app/php/mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      $('.output').show(500);
+      setTimeout(function() {
+        $('.output').hide(500);
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
 });
